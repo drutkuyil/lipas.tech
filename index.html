@@ -13,28 +13,25 @@ body {
   color: #e6f1ff;
   line-height: 1.75;
 }
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>...</title>
 
-  <style>
-    body { ... }
-    header { ... }
-    section { ... }
-    footer { ... }
-    /* vs */
-  </style>
-</head>
 /* HEADER */
 header {
   text-align: center;
   padding: 120px 20px;
   background: radial-gradient(circle at top, #0c1f44, #050b16);
 }
-header img { max-width: 220px; margin-bottom: 30px; }
-header h1 { font-size: 3em; margin: 0; }
-header p { font-size: 1.2em; opacity: 0.85; }
+header img {
+  max-width: 220px;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+header p {
+  font-size: 1.2em;
+  opacity: 0.85;
+}
 
 /* SECTIONS */
 section {
@@ -43,7 +40,10 @@ section {
   padding: 90px 20px;
   text-align: center;
 }
-section h2 { font-size: 2.2em; margin-bottom: 25px; }
+section h2 {
+  font-size: 2.2em;
+  margin-bottom: 25px;
+}
 section p {
   max-width: 900px;
   margin: 15px auto;
@@ -51,7 +51,9 @@ section p {
 }
 
 /* IMAGES */
-.image-block { margin-top: 40px; }
+.image-block {
+  margin-top: 40px;
+}
 .image-block img {
   width: 100%;
   max-width: 1000px;
@@ -117,7 +119,8 @@ section p {
 .notice-box {
   display: none;
   position: fixed;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background: #0b1320;
   color: #fff;
@@ -162,42 +165,28 @@ footer {
   <p>
     QUNET is a research-oriented initiative exploring the future of secure
     communication beyond classical networking models.
-    It focuses on conceptual architectures inspired by quantum networking,
-    trust propagation, and next-generation security principles.
   </p>
 </section>
 
 <section>
   <h2>Future of the Quantum Internet</h2>
   <div class="image-block">
-    <img src="assets/images/quantum_future.jpg">
+    <img src="assets/images/quantum_future.jpg" alt="">
   </div>
-  <p>
-    Quantum networking concepts rely on physical principles rather than
-    computational assumptions, enabling fundamentally new security models.
-  </p>
 </section>
 
 <section>
-  <h2>Quantum internet: How It Works</h2>
+  <h2>Quantum Internet: How It Works</h2>
   <div class="image-block">
-    <img src="assets/images/quantum_how_it_works.jpg">
+    <img src="assets/images/quantum_how_it_works.jpg" alt="">
   </div>
-  <p>
-    Information exchange is supported by entanglement and photon-based
-    signaling, reducing reliance on centralized trust authorities.
-  </p>
 </section>
 
 <section>
   <h2>Why It Is Secure</h2>
   <div class="image-block">
-    <img src="assets/images/quantum_vs_classic.jpg">
+    <img src="assets/images/quantum_vs_classic.jpg" alt="">
   </div>
-  <p>
-    Quantum-inspired security models rely on physical constraints,
-    making unauthorized interception inherently detectable.
-  </p>
 </section>
 
 <section>
@@ -205,8 +194,6 @@ footer {
   <p>
     QUNET defines the overarching research framework.
     LIPAS explores personalized, liveness-based authorization at the identity layer.
-    QUP investigates how verified trust signals could propagate across
-    future secure infrastructures.
   </p>
 </section>
 
@@ -215,39 +202,25 @@ footer {
   <p>
     LIPAS evaluates authorization through real-time liveness verification,
     physiological signals, and environmental integrity checks.
-    Authorization is bound to the moment of interaction and cannot be reused.
   </p>
 </section>
 
 <section>
   <h2>Why LIPAS Is Different</h2>
   <p>
-    Unlike credential-based systems, LIPAS does not store identities,
-    secrets, or reusable authorization artifacts.
-    Trust exists only during active verification.
+    LIPAS does not store identities, secrets, or reusable authorization artifacts.
   </p>
 </section>
 
 <section>
   <h2>Threat Model (LIPAS)</h2>
   <p>
-    LIPAS assumes compromised networks, hostile environments,
-    and advanced threat actors.
-    Any anomaly immediately halts authorization without escalation.
-  </p>
-  <p style="font-size:0.9em; opacity:0.7;">
-    Attacks result in interruption — not compromise.
+    Any anomaly immediately halts authorization.
   </p>
 </section>
 
 <section>
   <h2>Visual Concept – QUPAY</h2>
-  <p>
-    QUPAY illustrates how authorization approval from LIPAS
-    may enable interaction within QUNET.
-    It is not a payment system.
-  </p>
-
   <div class="qupay-stage">
     <div class="qupay-core">
       <img src="assets/images/qupay_logo.png" alt="QUPAY">
@@ -257,41 +230,11 @@ footer {
 
 <section>
   <h2>Documentation</h2>
-  <p>
-    All documents are provided strictly for transparency and research purposes.
-  </p>
-
   <div class="button-group">
     <div class="button" onclick="showLipasNotice()">🔐 View LIPAS Research (PDF)</div>
-    
-    </a>
   </div>
 </section>
-<section class="cross-link">
-  <div class="cross-box">
-    <div class="cross-item">
-      <img src="assets/images/qunet_logo.webp" alt="QUNET">
-      <h3>QUNET</h3>
-      <p>
-        Quantum-inspired secure network architecture exploring
-        trust propagation beyond classical systems.
-      </p>
-      <a href="https://qunettoken.com" target="_blank">Visit QUNET →</a>
-    </div>
 
-    <div class="cross-divider"></div>
-
-    <div class="cross-item">
-      <img src="assets/images/lipas_logo.webp" alt="LIPAS">
-      <h3>LIPAS</h3>
-      <p>
-        Liveness & Physical Authorization System providing
-        real-world authorization signals.
-      </p>
-      <a href="https://lipastech.com" target="_blank">Visit LIPAS →</a>
-    </div>
-  </div>
-</section>
 <footer>
   © 2026 QUNET TOKEN – Experimental & Informational Project Only
 </footer>
