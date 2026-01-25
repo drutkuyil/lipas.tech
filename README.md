@@ -1,78 +1,134 @@
-# lipas.tech
-# LIPAS™ – Liveness-Based Personalized Authorization System
+# LIPAS  
+**Liveness & Physical Authorization System**
 
-LIPAS™ is a research-oriented and patent-pending security architecture
-designed to explore next-generation authorization models that extend
-beyond classical credentials and device-bound authentication.
+LIPAS is a patented, research-oriented authorization framework focused on
+**liveness verification**, **physical presence**, and **biological consistency**
+as foundational trust signals for next-generation secure systems.
 
-The system focuses on **liveness verification**, **biologically bound identity**,
-and **safe-state security behavior** under physical or electromagnetic interference.
-
----
-
-## What is LIPAS?
-
-LIPAS investigates how authorization can be:
-- Non-transferable
-- Biologically bound to a living human
-- Resistant to coercion, replay, and physical manipulation
-
-Unlike traditional systems that rely solely on stored secrets or devices,
-LIPAS evaluates **real-time physiological and behavioral signals**
-to determine whether authorization should remain active.
+Unlike classical authentication mechanisms that rely solely on stored credentials,
+LIPAS explores authorization models grounded in **real-world physical and biological states**.
 
 ---
 
-## Core Research Concepts
+## 🔬 What is LIPAS?
 
-- **Liveness Verification**  
-  Detection of authentic biological activity rather than static biometric patterns.
+LIPAS (Liveness & Physical Authorization System) is a conceptual and technical research
+initiative that investigates how authorization decisions can be derived from:
 
-- **Safe-State Inactivation**  
-  Automatic transition to an inactive, non-exploitable state under:
-  - Physical interference
-  - Electromagnetic anomalies
-  - Stress or abnormal physiological patterns
+- Verified biological presence
+- Physical state consistency
+- Liveness indicators
+- Anomaly and interference detection
+- Non-persistent, stateless authorization logic
 
-- **Non-Transferable Authorization**  
-  Authorization signals cannot be copied, replayed, or delegated.
-
----
-
-## System Behavior Overview
-
-1. An authorization request is initiated via a secure system (e.g. QUNET).
-2. LIPAS evaluates liveness and physiological integrity.
-3. If authorization is confirmed, a verified signal may propagate to the system.
-4. If integrity is compromised, LIPAS enters a **safe inactive state**.
-5. No authorization signal is emitted in inactive mode.
+LIPAS does **not** store identity data, biometric templates, or authorization logic.
+All authorization signals are ephemeral and context-bound.
 
 ---
 
-## Relationship to Other Research Initiatives
+## 🧠 How LIPAS Works
 
-- **QUNET**  
-  A conceptual research framework exploring quantum-inspired secure communication.
+At a high level, LIPAS operates as an **authorization oracle**, not an identity database.
 
-- **QUP / QUPAY**  
-  Visual and conceptual representations of trust or authorization signal flow.
+1. A request for authorization is initiated
+2. Liveness and physical parameters are evaluated
+3. Environmental and interference checks are performed
+4. A binary authorization signal is produced:
+   - **Approve** → interaction allowed
+   - **Deny** → system enters safe inactive state
+5. No data is retained after the decision
 
-LIPAS operates independently and does **not** represent a payment system,
-financial instrument, or commercial authorization service.
-
----
-
-## Status
-
-- Research & conceptual architecture
-- Patent-pending
-- Non-commercial, non-operational
+This design minimizes attack surfaces associated with data persistence and replay attacks.
 
 ---
 
-## Disclaimer
+## 🧬 Why LIPAS is Different
 
-This repository and all associated materials are provided strictly for
-research, academic discussion, and transparency purposes only.
+Traditional systems ask:
+> *“Who are you?”*
 
-Nothing herein constitutes a financial, medical, or commercial offering.
+LIPAS asks:
+> *“Are you physically and biologically present **right now**, without interference?”*
+
+Key differentiators:
+
+- No long-term identity storage
+- No reusable credentials
+- No partial authorization states
+- Immediate collapse on anomaly detection
+- Authorization bound to real-world conditions
+
+---
+
+## ⚠️ Threat Model (LIPAS)
+
+LIPAS is designed with the assumption that:
+
+- Networks can be compromised
+- Devices can be cloned
+- Credentials can be stolen
+- Software states can be manipulated
+
+Therefore, LIPAS focuses on detecting:
+
+- Loss of liveness
+- Physical or electromagnetic interference
+- Biological inconsistency
+- Micro-contact anomalies
+- Abnormal physiological stress patterns
+
+When detected, the system immediately transitions into an **Inactive Safe State**.
+
+---
+
+## 🌐 Relationship to QUNET
+
+LIPAS is a complementary research component within the broader **QUNET** framework.
+
+- **QUNET** defines the secure network architecture
+- **LIPAS** provides liveness-based authorization signals
+- **QUPAY / QUP** visualizes how approved interaction may occur
+
+LIPAS itself is **not** a payment system, identity provider, or commercial authentication product.
+
+🔗 Learn more about QUNET:  
+https://qunettoken.com
+
+---
+
+## ⚖️ Patent & Legal Notice
+
+LIPAS is a **patented research concept**.
+
+All materials provided in this repository are for:
+- Research
+- Conceptual exploration
+- Transparency
+
+They do **not** represent:
+- A commercial product
+- A medical system
+- A financial service
+- A deployed security infrastructure
+
+Unauthorized implementation or commercial use may infringe applicable intellectual property rights.
+
+---
+
+## 📄 Documentation
+
+Technical references and research materials are available in the `/whitepaper` directory.
+
+---
+
+## 📌 Status
+
+LIPAS is currently in:
+**Research & Conceptual Development Phase**
+
+Specifications, diagrams, and models may evolve.
+
+---
+
+© 2026 LIPAS Research Initiative  
+Experimental & Informational Project Only
