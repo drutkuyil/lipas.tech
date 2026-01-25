@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUNET – Quantum Network Research Initiative</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #050b16;
+  color: #e6f1ff;
+  line-height: 1.75;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 120px 20px;
+  background: radial-gradient(circle at top, #0c1f44, #050b16);
+}
+header img { max-width: 220px; margin-bottom: 30px; }
+header h1 { font-size: 3em; margin: 0; }
+header p { font-size: 1.2em; opacity: 0.85; }
+
+/* SECTIONS */
+section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 20px;
+  text-align: center;
+}
+section h2 { font-size: 2.2em; margin-bottom: 25px; }
+section p {
+  max-width: 900px;
+  margin: 15px auto;
+  opacity: 0.9;
+}
+
+/* IMAGES */
+.image-block { margin-top: 40px; }
+.image-block img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 14px;
+  box-shadow: 0 0 45px rgba(0,200,255,0.18);
+}
+
+/* QUPAY VISUAL */
+.qupay-stage {
+  width: 520px;
+  height: 520px;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qupay-core {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #ffffff 32%,
+    rgba(0,255,200,0.9) 50%,
+    rgba(0,255,200,0.55) 66%,
+    rgba(0,255,200,0.25) 80%,
+    rgba(0,0,0,0) 100%
+  );
+  box-shadow:
+    0 0 60px rgba(0,255,200,0.35),
+    0 0 140px rgba(0,255,200,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qupay-core img {
+  width: 65%;
+  filter: drop-shadow(0 0 30px rgba(0,255,200,0.65));
+}
+
+/* BUTTONS */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  margin-top: 45px;
+}
+.button {
+  min-width: 260px;
+  padding: 16px 28px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#1e3799,#0a3d62);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 22px rgba(0,180,255,0.35);
+  cursor: pointer;
+}
+
+/* NOTICE */
+.notice-box {
+  display: none;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0b1320;
+  color: #fff;
+  padding: 24px 30px;
+  border-radius: 14px;
+  box-shadow: 0 0 40px rgba(0,200,255,0.25);
+  z-index: 9999;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.6;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+</head>
+
+<body>
+
+<div id="lipasNotice" class="notice-box">
+  <h3>Notice</h3>
+  <p>
+    This document relates to a separate research initiative (LIPAS).<br>
+    It is provided for transparency only and does not represent
+    a commercial, medical, or financial system.
+  </p>
+  <p style="font-size:12px; opacity:0.7;">Redirecting…</p>
+</div>
+
+<header>
+  <img src="assets/images/logo_qunet.jpg" alt="QUNET Logo">
+  <h1>QUNET</h1>
+  <p>Security Beyond Code. Trust Beyond Time.</p>
+</header>
+
+<section>
+  <h2>What is QUNET?</h2>
+  <p>
+    QUNET is a research-oriented initiative exploring the future of secure
+    communication beyond classical networking models.
+    It focuses on conceptual architectures inspired by quantum networking,
+    trust propagation, and next-generation security principles.
+  </p>
+</section>
+
+<section>
+  <h2>Evolution of Internet Technologies</h2>
+  <div class="image-block">
+    <img src="assets/images/internet_evolution.jpg">
+  </div>
+  <p>
+    The internet evolved from isolated research networks into a global
+    digital infrastructure, introducing new capabilities alongside
+    increasing trust challenges.
+  </p>
+</section>
+
+<section>
+  <h2>Future of the Quantum Internet</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_future.jpg">
+  </div>
+  <p>
+    Quantum networking concepts rely on physical principles rather than
+    computational assumptions, enabling fundamentally new security models.
+  </p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_how_it_works.jpg">
+  </div>
+  <p>
+    Information exchange is supported by entanglement and photon-based
+    signaling, reducing reliance on centralized trust authorities.
+  </p>
+</section>
+
+<section>
+  <h2>Why It Is Secure</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_vs_classic.jpg">
+  </div>
+  <p>
+    Quantum-inspired security models rely on physical constraints,
+    making unauthorized interception inherently detectable.
+  </p>
+</section>
+
+<section>
+  <h2>Research Architecture (QUNET – LIPAS – QUP)</h2>
+  <p>
+    QUNET defines the overarching research framework.
+    LIPAS explores personalized, liveness-based authorization at the identity layer.
+    QUP investigates how verified trust signals could propagate across
+    future secure infrastructures.
+  </p>
+</section>
+
+<section>
+  <h2>How LIPAS Works</h2>
+  <p>
+    LIPAS evaluates authorization through real-time liveness verification,
+    physiological signals, and environmental integrity checks.
+    Authorization is bound to the moment of interaction and cannot be reused.
+  </p>
+</section>
+
+<section>
+  <h2>Why LIPAS Is Different</h2>
+  <p>
+    Unlike credential-based systems, LIPAS does not store identities,
+    secrets, or reusable authorization artifacts.
+    Trust exists only during active verification.
+  </p>
+</section>
+
+<section>
+  <h2>Threat Model (LIPAS)</h2>
+  <p>
+    LIPAS assumes compromised networks, hostile environments,
+    and advanced threat actors.
+    Any anomaly immediately halts authorization without escalation.
+  </p>
+  <p style="font-size:0.9em; opacity:0.7;">
+    Attacks result in interruption — not compromise.
+  </p>
+</section>
+
+<section>
+  <h2>Visual Concept – QUPAY</h2>
+  <p>
+    QUPAY illustrates how authorization approval from LIPAS
+    may enable interaction within QUNET.
+    It is not a payment system.
+  </p>
+
+  <div class="qupay-stage">
+    <div class="qupay-core">
+      <img src="assets/images/qupay_logo.png" alt="QUPAY">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Documentation</h2>
+  <p>
+    All documents are provided strictly for transparency and research purposes.
+  </p>
+
+  <div class="button-group">
+    <div class="button" onclick="showLipasNotice()">🔐 View LIPAS Research (PDF)</div>
+    
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 QUNET TOKEN – Experimental & Informational Project Only
+</footer>
+
+<script>
+function showLipasNotice() {
+  const n = document.getElementById("lipasNotice");
+  n.style.display = "block";
+  setTimeout(() => {
+    n.style.display = "none";
+    window.open(
+      "https://drutkuyil.github.io/whitepaper/QUNET_Technical_Research_References.pdf",
+      "_blank"
+    );
+  }, 3000);
+}
+</script>
+
+</body>
+</html>
