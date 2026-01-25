@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QUNET – Quantum Network Research Initiative</title>
+<title>LIPAS – Liveness & Physical Authorization System</title>
 
 <style>
 body {
@@ -21,7 +21,7 @@ header {
   background: radial-gradient(circle at top, #0c1f44, #050b16);
 }
 header img {
-  max-width: 220px;
+  max-width: 200px;
   margin-bottom: 30px;
 }
 header h1 {
@@ -60,39 +60,20 @@ section p {
   border-radius: 14px;
   box-shadow: 0 0 45px rgba(0,200,255,0.18);
 }
+.image-caption {
+  margin-top: 14px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
 
-/* QUPAY VISUAL */
-.qupay-stage {
-  width: 520px;
-  height: 520px;
-  margin: 70px auto;
+/* LOGO STAGE */
+.logo-stage {
+  margin: 60px auto;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-.qupay-core {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    #ffffff 0%,
-    #ffffff 32%,
-    rgba(0,255,200,0.9) 50%,
-    rgba(0,255,200,0.55) 66%,
-    rgba(0,255,200,0.25) 80%,
-    rgba(0,0,0,0) 100%
-  );
-  box-shadow:
-    0 0 60px rgba(0,255,200,0.35),
-    0 0 140px rgba(0,255,200,0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.qupay-core img {
-  width: 65%;
-  filter: drop-shadow(0 0 30px rgba(0,255,200,0.65));
+.logo-stage img {
+  max-width: 280px;
 }
 
 /* BUTTONS */
@@ -155,88 +136,118 @@ footer {
 </div>
 
 <header>
-  <img src="assets/images/logo_qunet.jpg" alt="QUNET Logo">
-  <h1>QUNET</h1>
-  <p>Security Beyond Code. Trust Beyond Time.</p>
+  <img src="assets/images/lipas_logo.webp" alt="LIPAS Logo">
+  <h1>LIPAS</h1>
+  <p>Liveness & Physical Authorization System</p>
 </header>
 
 <section>
-  <h2>What is QUNET?</h2>
+  <h2>What is LIPAS?</h2>
   <p>
-    QUNET is a research-oriented initiative exploring the future of secure
-    communication beyond classical networking models.
-  </p>
-</section>
-
-<section>
-  <h2>Future of the Quantum Internet</h2>
-  <div class="image-block">
-    <img src="assets/images/quantum_future.jpg" alt="">
-  </div>
-</section>
-
-<section>
-  <h2>Quantum Internet: How It Works</h2>
-  <div class="image-block">
-    <img src="assets/images/quantum_how_it_works.jpg" alt="">
-  </div>
-</section>
-
-<section>
-  <h2>Why It Is Secure</h2>
-  <div class="image-block">
-    <img src="assets/images/quantum_vs_classic.jpg" alt="">
-  </div>
-</section>
-
-<section>
-  <h2>Research Architecture (QUNET – LIPAS – QUP)</h2>
-  <p>
-    QUNET defines the overarching research framework.
-    LIPAS explores personalized, liveness-based authorization at the identity layer.
+    LIPAS is a research initiative focused on real-time, liveness-based
+    authorization using physical and environmental signals.
+    It does not rely on stored credentials or reusable secrets.
   </p>
 </section>
 
 <section>
   <h2>How LIPAS Works</h2>
+  <div class="image-block">
+    <img src="assets/images/qunet_lipas_qupay_architecture.png" alt="LIPAS Architecture">
+    <div class="image-caption">
+      Conceptual architecture showing how LIPAS integrates with QUNET and QUPAY.
+    </div>
+  </div>
   <p>
-    LIPAS evaluates authorization through real-time liveness verification,
-    physiological signals, and environmental integrity checks.
+    Authorization is bound to the moment of interaction through physiological,
+    environmental, and liveness signals. Nothing can be replayed.
   </p>
 </section>
 
 <section>
   <h2>Why LIPAS Is Different</h2>
   <p>
-    LIPAS does not store identities, secrets, or reusable authorization artifacts.
+    LIPAS does not store identities, biometric templates, or authorization tokens.
+    Trust exists only during active verification.
   </p>
 </section>
 
 <section>
   <h2>Threat Model (LIPAS)</h2>
   <p>
-    Any anomaly immediately halts authorization.
+    LIPAS assumes hostile networks, compromised devices,
+    and advanced threat actors by default.
+  </p>
+  <p style="font-size:0.9em; opacity:0.7;">
+    Any anomaly results in interruption — not compromise.
   </p>
 </section>
 
 <section>
-  <h2>Visual Concept – QUPAY</h2>
-  <div class="qupay-stage">
-    <div class="qupay-core">
-      <img src="assets/images/qupay_logo.png" alt="QUPAY">
+  <h2>Quantum Internet Context</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_future.jpg" alt="Quantum Internet Future">
+    <div class="image-caption">
+      Evolution of quantum-secure communication networks.
     </div>
   </div>
 </section>
 
 <section>
+  <h2>Quantum Internet: How It Works</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_how_it_works.jpg" alt="Quantum How It Works">
+    <div class="image-caption">
+      Entanglement-based information exchange and physical trust guarantees.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Quantum Models Are Secure</h2>
+  <div class="image-block">
+    <img src="assets/images/quantum_vs_classic.jpg" alt="Quantum vs Classical Security">
+    <div class="image-caption">
+      Physical-layer security versus classical computational assumptions.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Visual Concept – QUPAY</h2>
+  <p>
+    QUPAY illustrates how LIPAS authorization may enable interaction
+    inside QUNET. It is not a payment system.
+  </p>
+  <div class="logo-stage">
+    <img src="assets/images/qupay_logo.png" alt="QUPAY Logo">
+  </div>
+</section>
+
+<section>
   <h2>Documentation</h2>
+  <p>
+    All materials are provided strictly for research and transparency.
+  </p>
   <div class="button-group">
     <div class="button" onclick="showLipasNotice()">🔐 View LIPAS Research (PDF)</div>
   </div>
 </section>
 
+<section>
+  <h2>Related Research</h2>
+  <div class="logo-stage">
+    <a href="https://qunettoken.com" target="_blank">
+      <img src="assets/images/logo_qunet.png" alt="QUNET">
+    </a>
+  </div>
+  <p>
+    LIPAS is conceptually aligned with the broader QUNET research framework.
+  </p>
+</section>
+
 <footer>
-  © 2026 QUNET TOKEN – Experimental & Informational Project Only
+  © 2026 LIPAS / QUNET – Experimental & Informational Research Only
 </footer>
 
 <script>
