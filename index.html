@@ -135,6 +135,17 @@ footer {
   background: rgba(10,40,80,0.35);
   box-shadow: 0 0 18px rgba(0,180,255,0.15);
 }
+  .video-wrapper {
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 0 45px rgba(0,200,255,0.18);
+  background: #000;
+}
 </style>
 </head>
 
@@ -178,7 +189,30 @@ footer {
     environmental, and liveness signals. Nothing can be replayed.
   </p>
 </section>
+<section>
+  <h2>LIPAS – Conceptual Demonstration</h2>
+  <p>
+    The following video is a conceptual visualization of LIPAS.
+    It is provided for research and explanatory purposes only.
+  </p>
 
+  <div class="video-wrapper">
+    <video
+      controls
+      preload="none"
+      poster="assets/images/lipas_video_poster.webp"
+      playsinline
+    >
+      <source src="assets/video/lipas_intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <p style="font-size:0.85em; opacity:0.7; margin-top:14px;">
+    This visualization does not represent an operational system,
+    commercial service, or deployed infrastructure.
+  </p>
+</section>
 <section>
   <h2>Why LIPAS Is Different</h2>
   <p>
