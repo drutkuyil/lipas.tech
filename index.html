@@ -175,18 +175,126 @@ footer {
     It does not rely on stored credentials or reusable secrets.
   </p>
 </section>
-
 <section>
   <h2>How LIPAS Works</h2>
-  <div class="image-block">
-    <img src="assets/images/qunet_lipas_qupay_architecture.webp" alt="LIPAS Architecture">
-    <div class="image-caption">
-      Conceptual architecture showing how LIPAS integrates with QUNET and QUPAY.
-    </div>
-  </div>
+
   <p>
-    Authorization is bound to the moment of interaction through physiological,
-    environmental, and liveness signals. Nothing can be replayed.
+    LIPAS is a liveness-based physical authorization system designed to
+    evaluate trust at the exact moment of decision. Unlike traditional
+    security models, LIPAS does not rely on stored identities,
+    reusable credentials, or persistent authorization states.
+  </p>
+
+  <p>
+    Authorization within LIPAS exists only during an active evaluation
+    window. Once the decision is produced, all intermediate signals
+    and internal states are discarded.
+  </p>
+
+  <h3>Liveness Verification</h3>
+  <p>
+    LIPAS continuously verifies biological presence using real-time
+    liveness indicators. Authorization is evaluated only while
+    physiological signals confirm the presence of a living subject.
+    Loss of liveness immediately terminates the process.
+  </p>
+
+  <h3>Physiological Evaluation Under Threat</h3>
+  <p>
+    During the authorization window, LIPAS evaluates physiological
+    response patterns associated with stress, coercion, or abnormal
+    decision-making conditions. These parameters are used solely for
+    integrity assessment and are never stored or transmitted.
+  </p>
+
+  <h3>Personalized Cardiovascular Signature</h3>
+  <p>
+    LIPAS may incorporate cardiovascular system dynamics as a
+    moment-bound, person-specific authorization signature.
+    This signature is valid only within the active evaluation window
+    and cannot be replayed, copied, or reconstructed.
+  </p>
+
+  <h3>Electromagnetic Anomaly Detection</h3>
+  <p>
+    The system monitors the surrounding electromagnetic environment
+    for anomalies indicative of interference, manipulation, or signal
+    injection attempts. Detection of abnormal electromagnetic
+    conditions immediately forces LIPAS into an inactive safe state.
+  </p>
+
+  <h3>Micro-Intervention and Nano-Manipulation Detection</h3>
+  <p>
+    To address potential micro-scale or nano-level intervention risks,
+    LIPAS evaluates micro-pressure changes, micro-contact patterns,
+    and unexpected physical interactions. Any detected anomaly results
+    in immediate termination and transition to a non-responsive safe state.
+  </p>
+
+  <h3>Authorization-Only Output</h3>
+  <p>
+    LIPAS produces only an authorization decision.
+    It does not emit identity data, biometric records, physiological
+    measurements, or environmental telemetry.
+    No reusable artifact is generated.
+  </p>
+
+  <h3>No External Interaction</h3>
+  <p>
+    During operation, LIPAS does not engage in bidirectional
+    communication with external systems. The system neither negotiates
+    nor adapts its behavior based on external commands or stimuli.
+  </p>
+
+  <p style="font-size:0.9em; opacity:0.7;">
+    Any detected anomaly results in interruption — not compromise.
+  </p>
+</section>
+
+<section>
+  <h2>Why LIPAS Is Different</h2>
+
+  <p>
+    Traditional security systems depend on stored secrets, identities,
+    or credentials that remain valid beyond the moment of use.
+    LIPAS eliminates this persistence entirely.
+  </p>
+
+  <p>
+    Authorization in LIPAS is not something a user possesses.
+    It is something that momentarily exists — and then disappears.
+  </p>
+
+  <p>
+    By binding trust to real-time physical and physiological conditions,
+    LIPAS prevents replay attacks, coercion-based authorization,
+    and post-compromise reuse scenarios.
+  </p>
+</section>
+
+<section>
+  <h2>Threat Model (LIPAS)</h2>
+
+  <p>
+    LIPAS is designed under the assumption that networks,
+    environments, and external systems may already be compromised.
+    The threat model includes hostile physical conditions,
+    electromagnetic interference, and advanced adversarial capabilities.
+  </p>
+
+  <p>
+    The system does not attempt to survive compromise.
+    Instead, it prioritizes immediate interruption and safe inactivation.
+  </p>
+
+  <p>
+    Any detected anomaly — biological, physiological, physical,
+    or electromagnetic — results in termination without escalation,
+    fallback, or degraded operation.
+  </p>
+
+  <p style="font-size:0.9em; opacity:0.7;">
+    Attacks result in interruption, not data leakage or silent failure.
   </p>
 </section>
 <section>
