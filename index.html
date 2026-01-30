@@ -197,6 +197,26 @@ footer {
     rgba(0,255,200,0.2)
   );
 }
+  .lipas-section {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 64px;
+}
+
+.lipas-section::before {
+  content: "";
+  position: absolute;
+  top: 8px;              /* başlık hizası */
+  left: 0;
+  width: 2px;
+  height: calc(100% - 8px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,255,200,0.85),
+    rgba(0,255,200,0.25)
+  );
+  border-radius: 2px;
+}
 </style>
 </head>
 
@@ -218,7 +238,7 @@ footer {
   <p>Liveness & Physical Authorization System</p>
 </header>
 
-<section>
+<section class="lipas-section">
   <h2>What is LIPAS?</h2>
   <p>
     LIPAS is a research initiative focused on real-time, liveness-based
@@ -309,7 +329,7 @@ footer {
   </p>
 </section>
 <div class="section-divider"></div>
-<section>
+<section class="lipas-section">
   <h2>Why LIPAS Is Different</h2>
 
   <p>
@@ -330,7 +350,7 @@ footer {
   </p>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Threat Model (LIPAS)</h2>
 
   <p>
@@ -355,7 +375,7 @@ footer {
     Attacks result in interruption, not data leakage or silent failure.
   </p>
 </section>
-<section>
+<section class="lipas-section">
   <h2>LIPAS – Conceptual Demonstration</h2>
   <p>
     The following video is a conceptual visualization of LIPAS.
@@ -379,7 +399,7 @@ footer {
     commercial service, or deployed infrastructure.
   </p>
 </section>
-<section>
+<section class="lipas-section">
   <h2>Why LIPAS Is Different</h2>
   <p>
     LIPAS does not store identities, biometric templates, or authorization tokens.
@@ -387,7 +407,7 @@ footer {
   </p>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Threat Model (LIPAS)</h2>
   <p>
     LIPAS assumes hostile networks, compromised devices,
@@ -398,7 +418,7 @@ footer {
   </p>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Quantum Internet Context</h2>
   <div class="image-block">
     <img src="assets/images/quantum_future.jpg" alt="Quantum Internet Future">
@@ -408,7 +428,7 @@ footer {
   </div>
 </section>
 
-<section>
+  <section class="lipas-section">
   <h2>Quantum Internet: How It Works</h2>
   <div class="image-block">
     <img src="assets/images/quantum_how_it_works.jpg" alt="Quantum How It Works">
@@ -418,7 +438,7 @@ footer {
   </div>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Why Quantum Models Are Secure</h2>
   <div class="image-block">
     <img src="assets/images/quantum_vs_classic.jpg" alt="Quantum vs Classical Security">
@@ -428,7 +448,7 @@ footer {
   </div>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Visual Concept – QUPAY</h2>
   <p>
     QUPAY illustrates how LIPAS authorization may enable interaction
@@ -439,7 +459,7 @@ footer {
   </div>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Documentation</h2>
   <p>
     All materials are provided strictly for research and transparency.
@@ -449,7 +469,7 @@ footer {
   </div>
 </section>
 
-<section>
+<section class="lipas-section">
   <h2>Related Research</h2>
   <div class="logo-stage">
     <a href="https://qunettoken.com" target="_blank">
