@@ -197,27 +197,8 @@ footer {
     rgba(0,255,200,0.2)
   );
 }
-  .lipas-section {
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 64px;
-}
-
-.lipas-section::before {
-  content: "";
-  position: absolute;
-  top: 8px;              /* başlık hizası */
-  left: 0;
-  width: 2px;
-  height: calc(100% - 8px);
-  background: linear-gradient(
-    to bottom,
-    rgba(0,255,200,0.85),
-    rgba(0,255,200,0.25)
-  );
-  border-radius: 2px;
-}
-  .lipas-section {
+/* LIPAS SECTION – symmetric academic layout */
+.lipas-section {
   position: relative;
   padding: 0 28px;
   margin-bottom: 72px;
@@ -227,26 +208,26 @@ footer {
 .lipas-section::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 0;                 /* başlık hizasından başlar */
   left: 0;
   width: 2px;
-  height: calc(100% - 10px);
+  height: 100%;
   background: linear-gradient(
     to bottom,
     rgba(0,255,200,0.9),
-    rgba(0,255,200,0.3)
+    rgba(0,255,200,0.25)
   );
   border-radius: 2px;
 }
 
-/* SAĞ DESTEK ÇİZGİ (daha hafif) */
+/* SAĞ DESTEK ÇİZGİ */
 .lipas-section::after {
   content: "";
   position: absolute;
-  top: 18px;
+  top: 0;
   right: 0;
   width: 1px;
-  height: calc(100% - 26px);
+  height: 100%;
   background: linear-gradient(
     to bottom,
     rgba(0,255,200,0.35),
@@ -254,7 +235,9 @@ footer {
   );
   border-radius: 1px;
 }
-  @media (max-width: 768px) {
+
+/* MOBİLDE SAĞ ÇİZGİ KAPANIR */
+@media (max-width: 768px) {
   .lipas-section::after {
     display: none;
   }
