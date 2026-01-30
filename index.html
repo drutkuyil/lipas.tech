@@ -179,6 +179,24 @@ footer {
   margin-bottom: 0;
   opacity: 0.9;
 }
+  .lipas-flow {
+  position: relative;
+  padding-left: 22px;
+}
+
+.lipas-flow::before {
+  content: "";
+  position: absolute;
+  top: 60px; /* H2'nin hemen altı */
+  left: 0;
+  width: 2px;
+  height: calc(100% - 60px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,255,200,0.8),
+    rgba(0,255,200,0.2)
+  );
+}
 </style>
 </head>
 
@@ -208,7 +226,7 @@ footer {
     It does not rely on stored credentials or reusable secrets.
   </p>
 </section>
-<section>
+<section class="lipas-flow">
   <h2>How LIPAS Works</h2>
 
   <p>
