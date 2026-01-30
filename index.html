@@ -217,6 +217,48 @@ footer {
   );
   border-radius: 2px;
 }
+  .lipas-section {
+  position: relative;
+  padding: 0 28px;
+  margin-bottom: 72px;
+}
+
+/* SOL ANA ÇİZGİ */
+.lipas-section::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 2px;
+  height: calc(100% - 10px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,255,200,0.9),
+    rgba(0,255,200,0.3)
+  );
+  border-radius: 2px;
+}
+
+/* SAĞ DESTEK ÇİZGİ (daha hafif) */
+.lipas-section::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 26px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,255,200,0.35),
+    rgba(0,255,200,0.05)
+  );
+  border-radius: 1px;
+}
+  @media (max-width: 768px) {
+  .lipas-section::after {
+    display: none;
+  }
+}
 </style>
 </head>
 
